@@ -1,9 +1,9 @@
 ---
-- name: Remove Utilitários de Rede
+- name: Instalação de Utilitários de Rede
   hosts: all
   become: yes  # IMPORTANTE: Isso diz "use sudo/root" para instalar
   tasks:
     - name: Instalar pacote net-tools
       package:
         name: net-tools
-        state: absent
+        state: present
