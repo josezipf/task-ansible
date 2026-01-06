@@ -1,0 +1,7 @@
+---
+- name: Teste de Conectividade (Ping)
+  hosts: all
+  gather_facts: no  # Importante para Mikrotik/Devices sem Python
+  tasks:
+    - name: Testar conexão (Ping)
+      ping:
