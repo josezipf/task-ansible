@@ -6,4 +6,4 @@
     - name: Instalar pacote net-tools
       package:
         name: net-tools
-        state: present
+        state: absent
