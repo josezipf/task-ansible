@@ -1,5 +1,5 @@
 ---
-- name: Instalação de Utilitários de Rede
+- name: Remove Utilitários de Rede
   hosts: all
   become: yes  # IMPORTANTE: Isso diz "use sudo/root" para instalar
   tasks:
